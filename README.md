@@ -23,7 +23,7 @@
             localStorage.setItem("ErlAuf", ErlAuf); // Punktzahl der erledigten Aufgaben in den Local Storage speichern
 
             // Weiterleitung zur Statistikseite
-            window.location.href = 'https://leon22221.github.io/Site-L/Statistiken.html';
+            window.location.href = 'https://leon22221.github.io/Site-L/';
         });
 
         document.getElementById('neinButton').addEventListener('click', function() {

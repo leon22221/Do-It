@@ -70,9 +70,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: transparent;
             pointer-events: none;
-            animation: backgroundAnimation 20s linear infinite, addDots 30s linear infinite; /* Hintergrundanimation und Punkte-Animation */
+            animation: addDots 5s linear infinite;
             z-index: -1; /* Animation im Hintergrund (unterhalb von Content und Buttons) */
         }
 
@@ -83,7 +82,7 @@
                 position: absolute;
                 background-color: white;
                 border-radius: 50%;
-                animation: moveDots 5s linear infinite, blinkDots 3s alternate infinite;
+                animation: moveDots 4s linear infinite, blinkDots 2s alternate infinite;
             }
             25% {
                 content: "";
@@ -91,7 +90,7 @@
                 position: absolute;
                 background-color: white;
                 border-radius: 50%;
-                animation: moveDots 5s linear infinite, blinkDots 2s alternate infinite;
+                animation: moveDots 3s linear infinite, blinkDots 1s alternate infinite;
             }
             50% {
                 content: "";
@@ -99,7 +98,7 @@
                 position: absolute;
                 background-color: white;
                 border-radius: 50%;
-                animation: moveDots 5s linear infinite, blinkDots 4s alternate infinite;
+                animation: moveDots 2s linear infinite, blinkDots 3s alternate infinite;
             }
             75% {
                 content: "";
@@ -107,16 +106,16 @@
                 position: absolute;
                 background-color: white;
                 border-radius: 50%;
-                animation: moveDots 5s linear infinite, blinkDots 3s alternate infinite;
+                animation: moveDots 1s linear infinite, blinkDots 4s alternate infinite;
             }
         }
 
         @keyframes moveDots {
             0% {
-                transform: translateY(0);
+                transform: translateY(0) translateX(0);
             }
             100% {
-                transform: translateY(-10px);
+                transform: translateY(-5px) translateX(5px);
             }
         }
 

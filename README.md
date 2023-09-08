@@ -10,7 +10,8 @@
             text-align: center; /* Zentrierter Text */
             font-size: 24px; /* Größere Schriftgröße */
             color: white; /* Weiße Schriftfarbe */
-            margin-top: 50px; /* Abstand von oben */
+            margin-top: 100px; /* Abstand von oben */
+            animation: backgroundAnimation 10s infinite; /* Hintergrundanimation */
         }
 
         h1 {
@@ -21,12 +22,13 @@
         .button-container {
             display: flex;
             justify-content: center;
+            margin-top: 50px; /* Abstand von oben für Button-Container */
         }
 
         button {
             font-size: 24px; /* Größere Schriftgröße für die Buttons */
-            padding: 10px 20px; /* Zusätzlicher Platz um den Text in den Buttons */
-            margin: 10px; /* Abstand zwischen den Buttons */
+            padding: 10px 30px; /* Zusätzlicher Platz um den Text in den Buttons */
+            margin: 10px 20px; /* Abstand zwischen den Buttons (horizontal und vertikal) */
             border: none; /* Keine Rahmen um die Buttons */
             cursor: pointer; /* Zeige Handcursor beim Überfahren der Buttons */
             background-color: #2a2a2a; /* Dunklerer Hintergrund für Buttons */
@@ -45,6 +47,16 @@
         button:hover {
             background-color: #0056b3; /* Dunklere Blaue Hintergrundfarbe beim Überfahren der Buttons */
             transform: scale(1.05); /* Vergrößere den Button beim Überfahren */
+        }
+
+        /* CSS für die Hintergrundanimation */
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 0;
+            }
         }
     </style>
 </head>

@@ -13,9 +13,9 @@
         // JavaScript-Code zur Interaktion mit den Buttons
         document.getElementById('jaButton').addEventListener('click', function() {
             // JavaScript-Code, um Punkte zu vergeben und zu speichern
-            localStorage.setItem("punkte", 0); // Punkte im Local Storage auf 0 setzen
             let punkte = parseInt(localStorage.getItem("punkte")) || 0; // Punkte aus dem Local Storage laden oder auf 0 setzen
             punkte += 10;
+             localStorage.setItem("punkte", 0); // Punkte im Local Storage auf 0 setzen
             localStorage.setItem("punkte", punkte); // Punkte in den Local Storage speichern
             document.getElementById("punkte").textContent = punkte; // Aktualisiere die Punkteanzeige
     

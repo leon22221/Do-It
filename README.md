@@ -52,17 +52,7 @@
             transform: scale(1.05); /* Vergrößere den Button beim Überfahren */
         }
 
-        /* CSS für die Hintergrundanimation */
-        @keyframes backgroundAnimation {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 100% 0;
-            }
-        }
-
-        /* CSS für die kleinen weißen Punkte */
+        /* CSS für die Hintergrundpunkte */
         body::before {
             content: "";
             position: absolute;
@@ -77,54 +67,24 @@
 
         @keyframes addDots {
             0%, 100% {
-                content: "";
-                display: block;
-                position: absolute;
-                background-color: white;
-                border-radius: 50%;
-                animation: moveDots 4s linear infinite, blinkDots 2s alternate infinite;
+                content: "• • • • • • • • • •"; /* 10 Punkte */
+                font-size: 20px; /* Größe der Punkte */
+                color: white; /* Farbe der Punkte */
             }
             25% {
-                content: "";
-                display: block;
-                position: absolute;
-                background-color: white;
-                border-radius: 50%;
-                animation: moveDots 3s linear infinite, blinkDots 1s alternate infinite;
+                content: "• • • • • • • • • •"; /* 10 Punkte */
+                font-size: 20px; /* Größe der Punkte */
+                color: white; /* Farbe der Punkte */
             }
             50% {
-                content: "";
-                display: block;
-                position: absolute;
-                background-color: white;
-                border-radius: 50%;
-                animation: moveDots 2s linear infinite, blinkDots 3s alternate infinite;
+                content: "• • • • • • • • • •"; /* 10 Punkte */
+                font-size: 20px; /* Größe der Punkte */
+                color: white; /* Farbe der Punkte */
             }
             75% {
-                content: "";
-                display: block;
-                position: absolute;
-                background-color: white;
-                border-radius: 50%;
-                animation: moveDots 1s linear infinite, blinkDots 4s alternate infinite;
-            }
-        }
-
-        @keyframes moveDots {
-            0% {
-                transform: translateY(0) translateX(0);
-            }
-            100% {
-                transform: translateY(-5px) translateX(5px);
-            }
-        }
-
-        @keyframes blinkDots {
-            0% {
-                opacity: 0.6;
-            }
-            100% {
-                opacity: 1;
+                content: "• • • • • • • • • •"; /* 10 Punkte */
+                font-size: 20px; /* Größe der Punkte */
+                color: white; /* Farbe der Punkte */
             }
         }
     </style>

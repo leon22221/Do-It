@@ -8,13 +8,13 @@
     <h1>Hast du die Aufgabe erledigtl?</h1>
     <button id="jaButton">Ja</button>
     <button id="neinButton">Nein</button>
-    <a href="https://leon22221.github.io/Do-It/">overview</a>
+    <a href="https://leon22221.github.io/Site-L/">SiteL</a>
 
     <script>
        // JavaScript-Code zur Interaktion mit den Buttons
         document.getElementById('jaButton').addEventListener('click', function() {
             alert('Gut gemacht! Aufgabe erledigt.');
-            <a href=" /leon22221/overview.html">overview</a>
+            <a href="https://leon22221.github.io/Site-L/">testz</a>
         });
 
         document.getElementById('neinButton').addEventListener('click', function() {

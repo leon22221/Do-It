@@ -10,7 +10,7 @@
             text-align: center; /* Zentrierter Text */
             font-size: 24px; /* Größere Schriftgröße */
             color: white; /* Weiße Schriftfarbe */
-            margin-top: 100px; /* Abstand von oben */
+            margin: 50px; /* Abstand von oben und den Seiten */
             animation: backgroundAnimation 10s infinite; /* Hintergrundanimation */
             position: relative; /* Relative Position für die Platzierung der Punkte */
         }
@@ -64,29 +64,21 @@
         body::before {
             content: "";
             position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 5px;
-            height: 5px;
-            background-color: white;
-            border-radius: 50%;
-            animation: dotsAnimation 4s infinite;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: transparent;
+            pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
         }
 
-        @keyframes dotsAnimation {
-            0%, 100% {
-                transform: translate(0, 0);
-            }
-            25% {
-                transform: translate(10px, 10px);
-            }
-            50% {
-                transform: translate(0, 20px);
-            }
-            75% {
-                transform: translate(-10px, 10px);
-            }
+        body::before {
+            background-image: radial-gradient(white 10%, transparent 10%);
+            background-size: 10px 10px;
+            background-position: 0 0, 5px 5px;
+            transform: scale(10);
         }
+
     </style>
 </head>
 <body>

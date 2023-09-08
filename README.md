@@ -8,7 +8,7 @@
     <h1>Hast du die Aufgabe erledigt?</h1>
     <button id="jaButton">Ja</button>
     <button id="neinButton">Nein</button>
-    <a href="/leon22221/overview.html">overview</a>
+    <a href="https://leon22221.github.io/Do-It/">overview</a>
 
     <script>
        // JavaScript-Code zur Interaktion mit den Buttons

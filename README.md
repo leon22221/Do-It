@@ -7,7 +7,7 @@
 <body>
     <h1>Hast du die Aufgabe erledigt?</h1>
     <button id="jaButton" onclick="window.location.href = 'https://leon22221.github.io/Site-L/';">Ja</button>
-    <button id="neinButton">Nein</button>
+    <button id="neinButton">Nein</button> onclick="window.location.href = 'https://leon22221.github.io/Site-L/';">Nein</button>
 
  <script>
         // JavaScript-Code zur Interaktion mit den Buttons

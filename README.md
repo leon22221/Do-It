@@ -5,8 +5,8 @@
     <title>Frage</title>
 </head>
 <body>
-    <h1>Hast du die Aufgabe erledigtl?</h1>
-    <button id="jaButton">Ja</button>
+    <h1>Hast du die Aufgabe erledigt?</h1>
+    <button onclick="window.location.href='https://leon22221.github.io/Site-L/'">Ja</button>
     <button id="neinButton">Nein</button>
     <a href="https://leon22221.github.io/Site-L/">SiteL</a>
 

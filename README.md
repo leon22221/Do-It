@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +6,11 @@
     <style>
         /* CSS-Stile für die Website */
         body {
-            background-color: #001f3f; /* Schwaches dunkelblau als Hintergrundfarbe */
+            background-color: #080808; /* Helle Schwarze Hintergrundfarbe */
             text-align: center; /* Zentrierter Text */
             font-size: 24px; /* Größere Schriftgröße */
             color: white; /* Weiße Schriftfarbe */
+            margin-top: 50px; /* Abstand von oben */
         }
 
         h1 {
@@ -29,20 +29,22 @@
             margin: 10px; /* Abstand zwischen den Buttons */
             border: none; /* Keine Rahmen um die Buttons */
             cursor: pointer; /* Zeige Handcursor beim Überfahren der Buttons */
+            background-color: #2a2a2a; /* Dunklerer Hintergrund für Buttons */
+            color: white; /* Weiße Schriftfarbe für Buttons */
+            transition: background-color 0.3s, transform 0.2s; /* Animationen für Hintergrundfarbe und Transformation */
         }
 
         #jaButton {
             background-color: #28a745; /* Angenehmes Grün für den "Ja"-Button */
-            color: white; /* Weiße Schriftfarbe für den "Ja"-Button */
         }
 
         #neinButton {
             background-color: #dc3545; /* Entspanntes Rot für den "Nein"-Button */
-            color: white; /* Weiße Schriftfarbe für den "Nein"-Button */
         }
 
         button:hover {
             background-color: #0056b3; /* Dunklere Blaue Hintergrundfarbe beim Überfahren der Buttons */
+            transform: scale(1.05); /* Vergrößere den Button beim Überfahren */
         }
     </style>
 </head>

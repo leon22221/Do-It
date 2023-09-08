@@ -70,13 +70,31 @@
             bottom: 0;
             background-color: transparent;
             pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
+            animation: moveDots 20s linear infinite; /* Animation für die Punkte */
+        }
+
+        @keyframes moveDots {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(10px); /* Bewegung um 10px nach unten */
+            }
         }
 
         body::before {
-            background-image: radial-gradient(white 10%, transparent 10%);
-            background-size: 10px 10px;
-            background-position: 0 0, 5px 5px;
-            transform: scale(10);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: transparent;
+            pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
+            background-image: radial-gradient(white 10%, transparent 10%); /* Punktmuster */
+            background-size: 10px 10px; /* Größe der Punkte */
+            background-position: 0 0, 5px 5px; /* Positionierung der Punkte */
+            transform: scale(10); /* Vergrößerung der Punkte */
         }
 
     </style>

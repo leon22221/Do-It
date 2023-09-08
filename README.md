@@ -1,4 +1,3 @@
-
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -36,6 +35,7 @@
             background-color: #2a2a2a; /* Dunklerer Hintergrund für Buttons */
             color: white; /* Weiße Schriftfarbe für Buttons */
             transition: background-color 0.3s, transform 0.2s; /* Animationen für Hintergrundfarbe und Transformation */
+            z-index: 1; /* Buttons liegen über den Punkten */
         }
 
         #jaButton {
@@ -65,13 +65,18 @@
         body::before {
             content: "";
             position: absolute;
-            top: 0;
+            top: -10px; /* Position der Punkte über dem sichtbaren Bereich des Body */
             left: 0;
             right: 0;
             bottom: 0;
             background-color: transparent;
             pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
+            background-image: radial-gradient(white 5%, transparent 5%); /* Punktmuster */
+            background-size: 10px 10px; /* Größe der Punkte */
+            background-position: 0 0; /* Positionierung der Punkte */
+            transform: scale(0.5); /* Verkleinerung der Punkte */
             animation: moveDots 20s linear infinite; /* Animation für die Punkte */
+            z-index: 0; /* Punkte befinden sich im Hintergrund */
         }
 
         @keyframes moveDots {
@@ -81,21 +86,6 @@
             100% {
                 transform: translateY(10px); /* Bewegung um 10px nach unten */
             }
-        }
-
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: transparent;
-            pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
-            background-image: radial-gradient(white 50%, transparent 50%); /* Punktmuster */
-            background-size: 30px 30px; /* Größe der Punkte */
-            background-position: 0 0, 30px 30px; /* Positionierung der Punkte */
-            transform: scale(0.5); /* Verkleinerung der Punkte */
         }
     </style>
 </head>

@@ -27,7 +27,13 @@
         });
 
         document.getElementById('neinButton').addEventListener('click', function() {
-            alert('Kinda Goofy von dir, guck dir deine Werte an!');
+            // JavaScript-Code, um Free Tickets zu vergeben und zu speichern
+            let freeTickets = parseInt(localStorage.getItem("FreeTickets")) || 0; // Free Tickets aus dem Local Storage laden oder auf 0 setzen
+            freeTickets += 1;
+            localStorage.setItem("FreeTickets", freeTickets); // Free Tickets in den Local Storage speichern
+
+            // Weiterleitung zur Statistikseite mit dem Hinweis auf ein Free Ticket
+            window.location.href = 'https://leon22221.github.io/Site-L/?status=not_completed&free_tickets=1';
         });
     </script>
 </body>

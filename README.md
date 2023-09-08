@@ -52,29 +52,6 @@
             transform: scale(1.05); /* Vergrößere den Button beim Überfahren */
         }
 
-    /* CSS für die Hintergrundpunkte */
-    body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: repeating-linear-gradient(45deg, transparent, transparent 10px, white 10px, white 11px);
-    animation: moveDots 60s linear infinite; /* Bewegung der Punkte */
-    z-index: -1; /* Hintergrundebene (unterhalb von Content und Buttons) */
-    background-size: 20px 20px; /* Größe der wiederholten Punktmuster */
-    }
-
-    @keyframes moveDots {
-    0% {
-        transform: translate(0, 0); /* Anfangsposition der Punkte */
-    }
-    100% {
-        transform: translate(20px, 20px); /* Endposition der Punkte */
-    }
-    }
     </style>
     </head>
     <body>

@@ -33,7 +33,7 @@
             localStorage.setItem("freeTickets", freeTickets); // Free Tickets in den Local Storage speichern
 
             // Weiterleitung zur Statistikseite mit dem Hinweis auf ein Free Ticket
-            window.location.href = 'https://leon22221.github.io/Site-L/';
+            window.location.href = 'https://leon22221.github.io/Site-L/status=not_completed';
         });
     </script>
 </body>

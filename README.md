@@ -21,7 +21,7 @@
         });
 
         document.getElementById('neinButton').addEventListener('click', function() {
-            alert('Kein Problem. Du schaffst es nächstes Mal!');
+                    alert('Kinda Goofy von dir, guck dir deine Werte an!');
         });
     </script>
 </body>

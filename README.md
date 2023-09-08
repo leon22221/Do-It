@@ -10,20 +10,21 @@
             text-align: center; /* Zentrierter Text */
             font-size: 24px; /* Größere Schriftgröße */
             color: white; /* Weiße Schriftfarbe */
-            margin: 50px; /* Abstand von oben und den Seiten */
+            margin: auto; /* Zentrieren der Website */
+            padding-top: 100px; /* Abstand von oben für die Überschrift und Buttons */
             animation: backgroundAnimation 10s infinite; /* Hintergrundanimation */
             position: relative; /* Relative Position für die Platzierung der Punkte */
         }
 
         h1 {
             font-size: 36px; /* Größere Schriftgröße für die Überschrift */
-            margin: 20px 0; /* Abstand über und unter der Überschrift */
+            margin-bottom: 20px; /* Abstand unter der Überschrift */
         }
 
         .button-container {
             display: flex;
             justify-content: center;
-            margin-top: 50px; /* Abstand von oben für Button-Container */
+            margin-top: 30px; /* Abstand von oben für Button-Container */
         }
 
         button {

@@ -5,7 +5,7 @@
     <title>Fragene</title>
     <style>
         /* CSS-Stile für die Website */
-            body {
+        body {
             background-color: #080808; /* Helle Schwarze Hintergrundfarbe */
             text-align: center; /* Zentrierter Text */
             font-size: 24px; /* Größere Schriftgröße */
@@ -63,30 +63,74 @@
         }
 
         /* CSS für die kleinen weißen Punkte */
-    body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    pointer-events: none;
-    animation: backgroundAnimation 20s linear infinite;
-    z-index: -1; /* Animation im Hintergrund (unterhalb von Content und Buttons) */
-    }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            pointer-events: none;
+            animation: backgroundAnimation 20s linear infinite, addDots 30s linear infinite; /* Hintergrundanimation und Punkte-Animation */
+            z-index: -1; /* Animation im Hintergrund (unterhalb von Content und Buttons) */
+        }
 
-    @keyframes backgroundAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px); /* Hier können Sie den Wert anpassen, um die Wellenbewegung zu steuern */
-    }
-    }
+        @keyframes addDots {
+            0%, 100% {
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: white;
+                border-radius: 50%;
+                animation: moveDots 5s linear infinite, blinkDots 3s alternate infinite;
+            }
+            25% {
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: white;
+                border-radius: 50%;
+                animation: moveDots 5s linear infinite, blinkDots 2s alternate infinite;
+            }
+            50% {
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: white;
+                border-radius: 50%;
+                animation: moveDots 5s linear infinite, blinkDots 4s alternate infinite;
+            }
+            75% {
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: white;
+                border-radius: 50%;
+                animation: moveDots 5s linear infinite, blinkDots 3s alternate infinite;
+            }
+        }
+
+        @keyframes moveDots {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes blinkDots {
+            0% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
-    </head>
-    <body>
+</head>
+<body>
     <h1>Hast du die Aufgabe erledigt?</h1>
     <div class="button-container">
         <button id="jaButton">Ja</button>
@@ -120,5 +164,5 @@
             window.location.href = 'https://leon22221.github.io/Site-L/?status=not_completed';
         });
     </script>
-    </body>
-    </html>
+</body>
+</html>

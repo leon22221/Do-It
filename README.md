@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frage</title>
+    <title>Fragene</title>
 </head>
 <body>
     <h1>Hast du die Aufgabe erledigt?</h1>

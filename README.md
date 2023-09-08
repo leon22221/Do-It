@@ -91,12 +91,11 @@
             bottom: 0;
             background-color: transparent;
             pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
-            background-image: radial-gradient(white 10%, transparent 10%); /* Punktmuster */
-            background-size: 10px 10px; /* Größe der Punkte */
-            background-position: 0 0, 5px 5px; /* Positionierung der Punkte */
-            transform: scale(10); /* Vergrößerung der Punkte */
+            background-image: radial-gradient(white 50%, transparent 50%); /* Punktmuster */
+            background-size: 20px 20px; /* Größe der Punkte */
+            background-position: 0 0, 10px 10px; /* Positionierung der Punkte */
+            transform: scale(2); /* Vergrößerung der Punkte */
         }
-
     </style>
 </head>
 <body>

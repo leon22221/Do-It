@@ -52,40 +52,26 @@
             transform: scale(1.05); /* Vergrößere den Button beim Überfahren */
         }
 
-        /* CSS für die Hintergrundpunkte */
-    /* CSS für die Hintergrundpunkte */
     body::before {
-    content: "";
+    content: "•"; /* Ein einzelner Punkt */
     position: absolute;
-    top: -10px;
-    left: -10px;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px; /* Größe der Punkte */
+    color: white; /* Farbe der Punkte */
     pointer-events: none;
-    animation: addDots 5s linear infinite;
-    z-index: -1; /* Animation im Hintergrund (unterhalb von Content und Buttons) */
-    }
+    animation: moveDots 60s linear infinite; /* Bewegung der Punkte */
+    z-index: -1; /* Hintergrundebene (unterhalb von Content und Buttons) */
+}
 
-    @keyframes addDots {
-    0%, 100% {
-        content: "• • • • • • • • • •"; /* 10 Punkte */
-        font-size: 20px; /* Größe der Punkte */
-        color: white; /* Farbe der Punkte */
+    @keyframes moveDots {
+    0% {
+        transform: translate(0, 0); /* Anfangsposition der Punkte */
     }
-    25% {
-        content: "• • • • • • • • • •"; /* 10 Punkte */
-        font-size: 20px; /* Größe der Punkte */
-        color: white; /* Farbe der Punkte */
-    }
-    50% {
-        content: "• • • • • • • • • •"; /* 10 Punkte */
-        font-size: 20px; /* Größe der Punkte */
-        color: white; /* Farbe der Punkte */
-    }
-    75% {
-        content: "• • • • • • • • • •"; /* 10 Punkte */
-        font-size: 20px; /* Größe der Punkte */
-        color: white; /* Farbe der Punkte */
+    100% {
+        transform: translate(20px, 20px); /* Endposition der Punkte */
     }
     }
     </style>

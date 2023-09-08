@@ -1,26 +1,23 @@
-<html>
+<html lang="de">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frage</title>
 </head>
 <body>
     <h1>Hast du die Aufgabe erledigt?</h1>
-    
-    <form>
-        <input type="button" value="Ja" onclick="antwort('Ja');">
-        <input type="button" value="Nein" onclick="antwort('Nein');">
-    </form>
-    
-    <p id="ergebnis"></p>
+    <button id="jaButton">Ja</button>
+    <button id="neinButton">Nein</button>
 
-    <script type="text/javascript">
-        function antwort(antwort) {
-            var applet = document.getElementById("java-applet");
-            applet.antwort(antwort);
-        }
+    <script>
+        // JavaScript-Code zur Interaktion mit den Buttons
+        document.getElementById('jaButton').addEventListener('click', function() {
+            alert('Gut gemacht! Aufgabe erledigt.');
+        });
+
+        document.getElementById('neinButton').addEventListener('click', function() {
+            alert('Kein Problem. Du schaffst es nächstes Mal!');
+        });
     </script>
-
-    <applet id="java-applet" code="InteraktivesApplet.class" width="0" height="0">
-        <param name="java_arguments" value="-Xmx128M">
-    </applet>
 </body>
 </html>

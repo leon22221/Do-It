@@ -22,7 +22,7 @@
             ErlAuf += 1;
             localStorage.setItem("ErlAuf", ErlAuf); // Punktzahl der erledigten Aufgaben in den Local Storage speichern
 
-            // Weiterleitung zur Statistikseite
+            // Weiterleitung zur Statistikseite mit JavaScript
             window.location.href = 'https://leon22221.github.io/Site-L/';
         });
 
@@ -32,9 +32,9 @@
             freeTickets += 1;
             localStorage.setItem("FreeTickets", freeTickets); // Free Tickets in den Local Storage speichern
 
-            // Weiterleitung zur Statistikseite mit dem Hinweis auf ein Free Ticket
+            // Weiterleitung zur Statistikseite mit dem Hinweis auf ein Free Ticket mit JavaScript
             window.location.href = 'https://leon22221.github.io/Site-L/?status=not_completed&free_tickets=1';
         });
     </script>
 </body>
-</html>
+</html

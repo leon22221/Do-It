@@ -11,18 +11,19 @@
 
  <script>
         // JavaScript-Code zur Interaktion mit den Buttons
-        document.getElementById('jaButton').addEventListener('click', function() {
-            // JavaScript-Code, um Punkte zu vergeben und zu speichern
-            let punkte = parseInt(localStorage.getItem("punkte")) || 0; // Punkte aus dem Local Storage laden oder auf 0 setzen
-            punkte += 10;
-            localStorage.setItem("punkte", punkte); // Punkte in den Local Storage speichern
-            document.getElementById("punkte").textContent = punkte; // Aktualisiere die Punkteanzeige
+document.getElementById('jaButton').addEventListener('click', function() {
+    // JavaScript-Code, um Gesamtpunkte zu vergeben und zu speichern
+    let gesamtpunkte = parseInt(localStorage.getItem("punkte")) || 0; // Gesamtpunkte aus dem Local Storage laden oder auf 0 setzen
+    punkte += 10;
+    localStorage.setItem("punkte", punkte); // Gesamtpunkte in den Local Storage speichern
+    document.getElementById("punkte").textContent = punkte; // Aktualisiere die Gesamtpunkte-Anzeige
 
-            let ErlAuf = parseInt(localStorage.getItem("ErlAuf")) || 0; // Punkte aus dem Local Storage laden oder auf 0 setzen
-            punkte += 1;
-            localStorage.setItem("ErlAuf", ErlAuf); // Punkte in den Local Storage speichern
-            document.getElementById("ErlAuf").textContent = ErlAuf; // Aktualisiere die Punkteanzeige
-        });
+    // JavaScript-Code, um Punktzahl der erledigten Aufgaben zu vergeben und zu speichern
+    let ErlAuf = parseInt(localStorage.getItem("ErlAuf")) || 0; // Punktzahl der erledigten Aufgaben aus dem Local Storage laden oder auf 0 setzen
+    ErlAuf += 1;
+    localStorage.setItem("ErlAuf", ErlAuf); // Punktzahl der erledigten Aufgaben in den Local Storage speichern
+    document.getElementById("ErlAuf").textContent = ErlAuf; // Aktualisiere die Punktzahl der erledigten Aufgaben-Anzeige
+});
 
         document.getElementById('neinButton').addEventListener('click', function() {
                     alert('Kinda Goofy von dir, guck dir deine Werte an!');

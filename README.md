@@ -64,20 +64,20 @@
 
         /* CSS für die kleinen weißen Punkte */
         body::before {
-            content: "";
-            position: absolute;
-            top: -10px; /* Position der Punkte über dem sichtbaren Bereich des Body */
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: transparent;
-            pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
-            background-image: radial-gradient(white 5%, transparent 5%); /* Punktmuster */
-            background-size: 10px 10px; /* Größe der Punkte */
-            background-position: 0 0; /* Positionierung der Punkte */
-            transform: scale(0.5); /* Verkleinerung der Punkte */
-            animation: moveDots 20s linear infinite; /* Animation für die Punkte */
-            z-index: 0; /* Punkte befinden sich im Hintergrund */
+         content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    pointer-events: none;
+    background-image: radial-gradient(white 5%, transparent 5%);
+    background-size: 10px 10px;
+    background-position: 0 0;
+    transform: scale(0.5);
+    animation: moveDots 20s linear infinite;
+    z-index: -1;
         }
 
         @keyframes moveDots {

@@ -5,7 +5,7 @@
     <title>Fragene</title>
     <style>
         /* CSS-Stile für die Website */
-        body {
+            body {
             background-color: #080808; /* Helle Schwarze Hintergrundfarbe */
             text-align: center; /* Zentrierter Text */
             font-size: 24px; /* Größere Schriftgröße */
@@ -63,8 +63,8 @@
         }
 
         /* CSS für die kleinen weißen Punkte */
-        body::before {
-         content: "";
+    body::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -72,25 +72,21 @@
     height: 100%;
     background-color: transparent;
     pointer-events: none;
-    background-image: radial-gradient(white 5%, transparent 5%);
-    background-size: 10px 10px;
-    background-position: 0 0;
-    transform: scale(0.5);
-    animation: moveDots 20s linear infinite;
-    z-index: -1;
-        }
+    animation: backgroundAnimation 20s linear infinite;
+    z-index: -1; /* Animation im Hintergrund (unterhalb von Content und Buttons) */
+    }
 
-        @keyframes moveDots {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(10px); /* Bewegung um 10px nach unten */
-            }
-        }
+    @keyframes backgroundAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); /* Hier können Sie den Wert anpassen, um die Wellenbewegung zu steuern */
+    }
+    }
     </style>
-</head>
-<body>
+    </head>
+    <body>
     <h1>Hast du die Aufgabe erledigt?</h1>
     <div class="button-container">
         <button id="jaButton">Ja</button>
@@ -124,5 +120,5 @@
             window.location.href = 'https://leon22221.github.io/Site-L/?status=not_completed';
         });
     </script>
-</body>
-</html>
+    </body>
+    </html>

@@ -5,10 +5,10 @@
     <title>Frage</title>
 </head>
 <body>
-    <h1>Hast du die Aufgabe erledigt Penis?</h1>
+    <h1>Hast du die Aufgabe erledigt?</h1>
     <button id="jaButton">Ja</button>
     <button id="neinButton">Nein</button>
-    <a href=" /leon22221/overview.html">overview</a>
+    <a href="/leon22221/overview.html">overview</a>
 
     <script>
        // JavaScript-Code zur Interaktion mit den Buttons

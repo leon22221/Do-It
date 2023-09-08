@@ -17,6 +17,9 @@
             punkte += 10;
             localStorage.setItem("punkte", punkte); // Punkte in den Local Storage speichern
             document.getElementById("punkte").textContent = punkte; // Aktualisiere die Punkteanzeige
+            localStorage.setItem("punkte", 0); // Punkte im Local Storage auf 0 setzen
+            document.getElementById("punkte").textContent = 0; // Aktualisiere die Punkteanzeige
+        }
 
         });
 

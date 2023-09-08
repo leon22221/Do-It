@@ -13,10 +13,10 @@
         // JavaScript-Code zur Interaktion mit den Buttons
         document.getElementById('jaButton').addEventListener('click', function() {
             // JavaScript-Code, um Gesamtpunkte zu vergeben und zu speichern
-            let gesamtpunkte = parseInt(localStorage.getItem("punkte")) || 0; // Gesamtpunkte aus dem Local Storage laden oder auf 0 setzen
-            gesamtpunkte += 10;
-            localStorage.setItem("punkte", gesamtpunkte); // Gesamtpunkte in den Local Storage speichern
-            document.getElementById("punkte").textContent = gesamtpunkte; // Aktualisiere die Gesamtpunkte-Anzeige
+            let punkte = parseInt(localStorage.getItem("punkte")) || 0; // Gesamtpunkte aus dem Local Storage laden oder auf 0 setzen
+            punkte += 10;
+            localStorage.setItem("punkte", punkte); // Gesamtpunkte in den Local Storage speichern
+            document.getElementById("punkte").textContent = punkte; // Aktualisiere die Gesamtpunkte-Anzeige
 
             // JavaScript-Code, um Punktzahl der erledigten Aufgaben zu vergeben und zu speichern
             let ErlAuf = parseInt(localStorage.getItem("ErlAuf")) || 0; // Punktzahl der erledigten Aufgaben aus dem Local Storage laden oder auf 0 setzen

@@ -12,6 +12,7 @@
             color: white; /* Weiße Schriftfarbe */
             margin-top: 100px; /* Abstand von oben */
             animation: backgroundAnimation 10s infinite; /* Hintergrundanimation */
+            position: relative; /* Relative Position für die Platzierung der Punkte */
         }
 
         h1 {
@@ -56,6 +57,34 @@
             }
             100% {
                 background-position: 100% 0;
+            }
+        }
+
+        /* CSS für die kleinen weißen Punkte */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            border-radius: 50%;
+            animation: dotsAnimation 4s infinite;
+        }
+
+        @keyframes dotsAnimation {
+            0%, 100% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(10px, 10px);
+            }
+            50% {
+                transform: translate(0, 20px);
+            }
+            75% {
+                transform: translate(-10px, 10px);
             }
         }
     </style>

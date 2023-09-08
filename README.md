@@ -17,7 +17,11 @@
             punkte += 10;
             localStorage.setItem("punkte", punkte); // Punkte in den Local Storage speichern
             document.getElementById("punkte").textContent = punkte; // Aktualisiere die Punkteanzeige
-    
+
+            let ErlAuf = parseInt(localStorage.getItem("ErlAuf")) || 0; // Punkte aus dem Local Storage laden oder auf 0 setzen
+            punkte += 1;
+            localStorage.setItem("ErlAuf", ErlAuf); // Punkte in den Local Storage speichern
+            document.getElementById("ErlAuf").textContent = ErlAuf; // Aktualisiere die Punkteanzeige
         });
 
         document.getElementById('neinButton').addEventListener('click', function() {

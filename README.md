@@ -84,6 +84,10 @@
             freeTickets += 1;
             localStorage.setItem("freeTickets", freeTickets); // Free Tickets in den Local Storage speichern
 
+        let punkte = parseInt(localStorage.getItem("punkte")) || 0;
+        punkte += 0; // Keine Punkteänderung im "Nein"-Fall
+        localStorage.setItem("punkte", punkte);
+
             // Weiterleitung zur Statistikseite mit dem Hinweis auf ein Free Ticket
             window.location.href = 'https://leon22221.github.io/Site-L/?status=not_completed';
         });

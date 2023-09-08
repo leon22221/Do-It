@@ -3,6 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragene</title>
+    <style>
+        /* CSS-Stile für die Website */
+        body {
+            background-color: #001f3f; /* Schwaches dunkelblau als Hintergrundfarbe */
+            text-align: center; /* Zentrierter Text */
+            font-size: 24px; /* Größere Schriftgröße */
+            color: white; /* Weiße Schriftfarbe */
+        }
+
+        h1 {
+            font-size: 36px; /* Größere Schriftgröße für die Überschrift */
+        }
+
+        button {
+            font-size: 24px; /* Größere Schriftgröße für die Buttons */
+            padding: 10px 20px; /* Zusätzlicher Platz um den Text in den Buttons */
+            margin: 10px; /* Abstand zwischen den Buttons */
+            background-color: #0074D9; /* Blaue Hintergrundfarbe für die Buttons */
+            color: white; /* Weiße Schriftfarbe für die Buttons */
+            border: none; /* Keine Rahmen um die Buttons */
+            cursor: pointer; /* Zeige Handcursor beim Überfahren der Buttons */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Dunklere Blaue Hintergrundfarbe beim Überfahren der Buttons */
+        }
+    </style>
 </head>
 <body>
     <h1>Hast du die Aufgabe erledigt?</h1>

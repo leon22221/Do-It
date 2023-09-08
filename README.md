@@ -53,43 +53,44 @@
         }
 
         /* CSS für die Hintergrundpunkte */
-        body::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            animation: addDots 5s linear infinite;
-            z-index: -1; /* Animation im Hintergrund (unterhalb von Content und Buttons) */
-        }
+    /* CSS für die Hintergrundpunkte */
+    body::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    pointer-events: none;
+    animation: addDots 5s linear infinite;
+    z-index: -1; /* Animation im Hintergrund (unterhalb von Content und Buttons) */
+    }
 
-        @keyframes addDots {
-            0%, 100% {
-                content: "• • • • • • • • • •"; /* 10 Punkte */
-                font-size: 20px; /* Größe der Punkte */
-                color: white; /* Farbe der Punkte */
-            }
-            25% {
-                content: "• • • • • • • • • •"; /* 10 Punkte */
-                font-size: 20px; /* Größe der Punkte */
-                color: white; /* Farbe der Punkte */
-            }
-            50% {
-                content: "• • • • • • • • • •"; /* 10 Punkte */
-                font-size: 20px; /* Größe der Punkte */
-                color: white; /* Farbe der Punkte */
-            }
-            75% {
-                content: "• • • • • • • • • •"; /* 10 Punkte */
-                font-size: 20px; /* Größe der Punkte */
-                color: white; /* Farbe der Punkte */
-            }
-        }
+    @keyframes addDots {
+    0%, 100% {
+        content: "• • • • • • • • • •"; /* 10 Punkte */
+        font-size: 20px; /* Größe der Punkte */
+        color: white; /* Farbe der Punkte */
+    }
+    25% {
+        content: "• • • • • • • • • •"; /* 10 Punkte */
+        font-size: 20px; /* Größe der Punkte */
+        color: white; /* Farbe der Punkte */
+    }
+    50% {
+        content: "• • • • • • • • • •"; /* 10 Punkte */
+        font-size: 20px; /* Größe der Punkte */
+        color: white; /* Farbe der Punkte */
+    }
+    75% {
+        content: "• • • • • • • • • •"; /* 10 Punkte */
+        font-size: 20px; /* Größe der Punkte */
+        color: white; /* Farbe der Punkte */
+    }
+    }
     </style>
-</head>
-<body>
+    </head>
+    <body>
     <h1>Hast du die Aufgabe erledigt?</h1>
     <div class="button-container">
         <button id="jaButton">Ja</button>
@@ -123,5 +124,5 @@
             window.location.href = 'https://leon22221.github.io/Site-L/?status=not_completed';
         });
     </script>
-</body>
-</html>
+    </body>
+    </html>

@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Hast du die Aufgabe erledigt?</h1>
-    <button id="jaButton">Ja</button>
+    <button id="jaButton" onclick="window.location.href = 'https://leon22221.github.io/Site-L/';">Ja</button>
     <button id="neinButton">Nein</button>
 
     <script>
@@ -18,8 +18,6 @@
             localStorage.setItem("punkte", punkte); // Punkte in den Local Storage speichern
             document.getElementById("punkte").textContent = punkte; // Aktualisiere die Punkteanzeige
 
-            // Weiterleitung zur anderen Website
-            window.location.href = "https://leon22221.github.io/Site-L/";
         });
 
         document.getElementById('neinButton').addEventListener('click', function() {

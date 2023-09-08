@@ -5,7 +5,7 @@
     <title>Frage</title>
 </head>
 <body>
-    <h1>Hast du die Aufgabe erledigt?</h1>
+    <h1>Hast du die Aufgabe erledigtl?</h1>
     <button id="jaButton">Ja</button>
     <button id="neinButton">Nein</button>
     <a href="https://leon22221.github.io/Do-It/">overview</a>

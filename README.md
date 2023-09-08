@@ -14,16 +14,16 @@
        // JavaScript-Code zur Interaktion mit den Buttons
         document.getElementById('jaButton').addEventListener('click', function() {
             <a href="https://leon22221.github.io/Site-L/">testz</a>
-        // Funktion, um die Punkte zu erhöhen
-        function punkteErhoehen() {
-            // Versuche, die aktuellen Punkte aus dem lokalen Speicher abzurufen
-            let aktuellePunkte = parseInt(localStorage.getItem('punkte')) || 0;
-            
-            // Erhöhe die Punkte um 10
-            aktuellePunkte += 10;
+            // JavaScript-Code, um Punkte zu vergeben und zu speichern
+        let punkte = 0;
 
-            // Speichere die aktualisierten Punkte im lokalen Speicher
-            localStorage.setItem('punkte', aktuellePunkte);
+        document.getElementById("jaButton").addEventListener("click", function() {
+            punkte += 10;
+            document.getElementById("punkte").textContent = punkte;
+
+            // Punkte in den Local Storage speichern
+            localStorage.setItem("punkte", punkte);
+        });
 
             // Aktualisiere die Anzeige der Punkte auf der Seite
             document.getElementById('punkte').textContent = aktuellePunkte;

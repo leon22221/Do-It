@@ -1,0 +1,15 @@
+import java.applet.Applet;
+import java.awt.Graphics;
+
+public class InteraktivesApplet extends Applet {
+    private String antwort = "";
+
+    public void antwort(String antwort) {
+        this.antwort = antwort;
+        repaint();
+    }
+
+    public void paint(Graphics g) {
+        g.drawString("Deine Antwort: " + antwort, 10, 30);
+    }
+}

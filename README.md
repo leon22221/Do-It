@@ -1,3 +1,4 @@
+
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -92,9 +93,9 @@
             background-color: transparent;
             pointer-events: none; /* Punkte dürfen nicht angeklickt werden */
             background-image: radial-gradient(white 50%, transparent 50%); /* Punktmuster */
-            background-size: 20px 20px; /* Größe der Punkte */
-            background-position: 0 0, 10px 10px; /* Positionierung der Punkte */
-            transform: scale(2); /* Vergrößerung der Punkte */
+            background-size: 30px 30px; /* Größe der Punkte */
+            background-position: 0 0, 30px 30px; /* Positionierung der Punkte */
+            transform: scale(0.5); /* Verkleinerung der Punkte */
         }
     </style>
 </head>
@@ -122,7 +123,7 @@
             window.location.href = 'https://leon22221.github.io/Site-L/?status=completed';
         });
 
-       document.getElementById('neinButton').addEventListener('click', function() {
+        document.getElementById('neinButton').addEventListener('click', function() {
             // JavaScript-Code, um Free Tickets zu vergeben und zu speichern
             let freeTickets = parseInt(localStorage.getItem("freeTickets")) || 0; // Free Tickets aus dem Local Storage laden oder auf 0 setzen
             freeTickets += 1;
